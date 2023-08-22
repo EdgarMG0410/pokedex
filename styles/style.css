@@ -1,0 +1,23 @@
+@import './globals.css';
+
+.tittle {
+  font-size: 250%;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--yellow);
+  margin: 0;
+  padding: 0;
+  height: 80px;
+}
+.navbar {
+  background-color: rgb(246, 237, 237);
+  height: 50px;
+  flex: auto;
+}
+.search button {
+    
+    font-family: sans-serif;
+    height: 100px;
+    position: relative;
+    background-color: red;
+} 
