@@ -1,20 +1,11 @@
 @import './globals.css';
 
-.title {
-  font-size: 250%;
-  font-family: sans-serif;
-  text-align: center;
-  background-color: var(--yellow);
-  margin: 0;
-  padding: 50px top;
-  height: 80px;
-}
-
 .navbar {
   display: flex;
-  flex-wrap: wrap;
-  gap: ;
+  width: fit-content;
+  align-items: center;
 }
+
 .pokemon-list {
   display: flex;
   max-width: 1400px;
@@ -32,23 +23,55 @@
   height: 200px;
   background-color: darkgray;
 }
-.search{
-  width: 900px;
-  height: 70px;
+
+.search {
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.6rem 1rem;
   border-radius: 50px 0px 0px 50px;
-  border-color: aliceblue;
+  border: none;
+  box-shadow: 0px 3px 3px #3f3f3f31;
+  padding-left: 3rem;
 }
 
-.search-button{
+.search-button {
   width: 100px;
-  height: 70px;
-  background-color: black;
-  color: aliceblue;
+  height: fit-content;
+  background-color: #b4b4b441;
+  color: #5e5e5e;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  padding: 0.6rem 0.2rem;
+  box-shadow: 0px 3px 3px #3f3f3f31;
+  cursor: pointer;
+  &:hover{
+    background-color: #b4b4b491;
+  }
 }
-.logout{
-  width: 70px;
-  margin: 50px;
-  height: 70px;
-  background-color: black;
+
+.logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
   color: aliceblue;
+  & button {
+    max-width: fit-content;
+    background-color: transparent;
+    border: none;
+    box-shadow: 2px 3px 10px rgb(204, 204, 204);
+    color: black;
+    padding: .8rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #3f3f3f;
+    &:hover {
+      box-shadow: 2px 3px 10px gray;
+      transition-duration: 300ms;
+    }
+  }
 }
