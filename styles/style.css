@@ -1,23 +1,54 @@
 @import './globals.css';
 
-.tittle {
+.title {
   font-size: 250%;
   font-family: sans-serif;
   text-align: center;
   background-color: var(--yellow);
   margin: 0;
-  padding: 0;
+  padding: 50px top;
   height: 80px;
 }
+
 .navbar {
-  background-color: rgb(246, 237, 237);
-  height: 50px;
-  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: ;
 }
-.search button {
-    
-    font-family: sans-serif;
-    height: 100px;
-    position: relative;
-    background-color: red;
-} 
+.pokemon-list {
+  display: flex;
+  max-width: 1400px;
+  gap: 100px 50px;
+  margin: auto;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  min-width: 200px;
+  width: 200px;
+  height: 200px;
+  background-color: darkgray;
+}
+.search{
+  width: 900px;
+  height: 70px;
+  border-radius: 50px 0px 0px 50px;
+  border-color: aliceblue;
+}
+
+.search-button{
+  width: 100px;
+  height: 70px;
+  background-color: black;
+  color: aliceblue;
+}
+.logout{
+  width: 70px;
+  margin: 50px;
+  height: 70px;
+  background-color: black;
+  color: aliceblue;
+}

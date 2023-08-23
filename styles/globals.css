@@ -6,13 +6,34 @@
     font-size: 16px;
 }
 
-body{
+body {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     min-height: 100vh;
 }
 
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+    
+}
+h2{
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0 2rem;
+}
+
 :root {
-    --yellow: red
+    /* Variables css */
 }
