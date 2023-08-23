@@ -73,7 +73,6 @@
     font-size: 0.8rem;
     font-weight: 700;
     color: #3f3f3f;
-
     &:hover {
       box-shadow: 2px 3px 10px gray;
       transition-duration: 300ms;
@@ -81,14 +80,24 @@
   }
 }
 
-.grass {
-  background-color: rgb(46, 234, 46);
+.type {
   border-radius: 50px;
   justify-content: center;
   align-items: center;
   width: fit-content;
   padding: 8px;
+}
 
+.grass {
+  background-color: rgb(46, 234, 46);
+
+}
+.ice {
+  background-color: rgb(46, 190, 234);
+}
+.ground {
+  background-color: #292222;
+  color: white;
 }
 
 .pokemon {
@@ -101,10 +110,13 @@
   justify-content: space-evenly;
   width: 100%;
   margin: auto;
-  background-color: #3f3f3f;
+  border: 1px solid black;
+  border-bottom: none;
   padding: 1rem 0.4rem;
-  & p{
-    font-size: 500px;
+
+  & p {
+    font-size: 20px;
+    width: fit-content;
   }
 
 }
@@ -114,6 +126,7 @@
   justify-content: space-evenly;
   width: 100%;
   margin: auto;
-  background-color: #3f3f3f;
+  border-top: none !important;
+  border: 1px solid black;
   padding: 1rem 0.4rem;
 }
