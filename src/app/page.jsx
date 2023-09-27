@@ -1,5 +1,5 @@
 "use client"
-import PokeLoader from "@/components/shared/PokeLoader";
+import PokeLoader from "../components/PokeLoader";
 import Image from "next/image";
 import { useState } from "react";
 
