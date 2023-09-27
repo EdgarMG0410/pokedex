@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import PokeLoader from "@/components/shared/PokeLoader";
 import Image from "next/image";
 import { useState } from "react";
@@ -9,11 +9,15 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center relative overflow-hidden">
       <div className="flex absolute items-center justify-center w-full h-screen bg-pk-red">
         <div className="flex z-20 w-[calc(100%-80px)] overflow-hidden h-[calc(100%-80px)] relative m-auto  rounded-[40px] border-[16px] border-black">
-          <div className={`absolute flex items-center z-20 justify-center w-full h-full ${isLoading ? "bg-black" : "bg-white"} `}>
+          <div
+            className={`absolute flex items-center z-20 justify-center w-full h-full ${
+              isLoading ? "bg-black" : "bg-white"
+            } `}
+          >
             {isLoading ? (
               <div className="flex flex-col gap-y-6">
                 <div className="relative pb-24">
-                <PokeLoader />
+                  <PokeLoader />
                 </div>
                 <p className="text-4xl capitalize">Cargando ...</p>
               </div>

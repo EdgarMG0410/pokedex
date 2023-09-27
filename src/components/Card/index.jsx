@@ -1,11 +1,12 @@
 import React from "react";
 import st from "./CardStyles.module.css";
+import Image from "next/image";
 
 const Card = () => {
   return (
     <div className={st.card}>
       <div className={st.pokeimg}>
-        <img  src="/images/001.png" alt="bulbasaur" />
+        <Image  src="/images/001.png" alt="bulbasaur" fill />
       </div>
       <div className={st.namepokemon}>
         <p>Bulbasaur</p>

@@ -1,8 +1,6 @@
-import Card from "@/components/Card";
-import React from "react";
-import st from "./ListStyles.module.css";
-
-
+import Card from '../../components/Card'
+import React from 'react'
+import st from '../../styles/ListStyles.module.css'
 
 const List = () => {
   return (
