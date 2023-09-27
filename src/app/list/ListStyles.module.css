@@ -1,3 +1,21 @@
+
+.body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
 .header{
-    width: 100%;
+    font-size: 50px;
+    color:black
+}
+.pokelist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row ;
+    padding: 50px;
+    min-width: 100vh;
+
 }
