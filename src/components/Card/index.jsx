@@ -1,21 +1,31 @@
 import React from "react";
 import st from "./CardStyles.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import Badges  from "../Badge"
+import { fadeBottom, fadeIn } from "../../utils/animations";
 
-const Card = () => {
+const Card = ({pokemon}) => {
+  console.log(pokemon)
   return (
-    <div className={st.card}>
+    <motion.div
+    initial={'hidden'}
+    whileInView={'visible'}
+    variants={fadeBottom(0.7,0.2)}
+    className={st.card}>
+            <div className={st.namepokemon}>
+        <p>{pokemon.name}</p>
+      </div>
       <div className={st.pokeimg}>
-        <Image  src="/images/001.png" alt="bulbasaur" fill />
+        <Image src={pokemon.sprites.front_default} alt="bulbasaur" fill />
       </div>
-      <div className={st.namepokemon}>
-        <p>Bulbasaur</p>
-      </div>
+
       <div className={st.pokemontypes}>
-        <div className={st.typegrass}>grass</div>
-        <div className={st.typepoison}>poison</div>
+      {pokemon.types.map((type, index) => (
+          <Badges key={index} className={type.type.name} text={type.type.name}/>
+        ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

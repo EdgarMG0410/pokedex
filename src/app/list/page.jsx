@@ -9,7 +9,7 @@ const List = () => {
   useEffect(() => {
     const fetchPokemonList = async () => {
       try {
-        const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+        const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=1000');
         if (response.ok) {
           const data = await response.json();
           const results = data.results;
@@ -27,15 +27,15 @@ const List = () => {
     };
     fetchPokemonList();
   }, []);
-console.log(pokemonList)
+
   return (
-    <main className={st.body}>
-      <div className={st.header}>
+    <main className={st.bodylist}>
+      <div className={st.headerlist}>
         <h1>151 DEX</h1>
       </div>
       <section className={st.pokelist}>
-        {pokemonList.map((item, index) => (
-          <Card key={index} item={item}/>
+        {pokemonList.map((pokemon, index) => (
+          <Card key={index} pokemon={pokemon}/>
         ))}
       </section>
     </main>
