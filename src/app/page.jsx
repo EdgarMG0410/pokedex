@@ -3,7 +3,7 @@ import PokeLoader from "../components/PokeLoader";
 import FireAnimation from "../components/FireAnimation";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { fadeBottom, fadeIn } from "../utils/animations";
 import Link from "next/link";
 
@@ -68,7 +68,7 @@ export default function Home() {
                 whileInView={"visible"}
                 variants={fadeIn(0.6, 0.5)}
                 className="absolute z-50 bottom-24 lg:bottom-16 left-12 lg:left-[14vw] w-fit h-fit">
-                  <button className="text-[clamp(16px,_2vw,_40px)] uppercase">
+                  <button className="text-[clamp(16px,_2vw,_40px)] text-white font-pressStart uppercase">
                     <Link href="/list">Click to start</Link>
                   </button>
                 </motion.div>

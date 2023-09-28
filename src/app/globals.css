@@ -8,6 +8,14 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+html {
+  font-family: var(--font-bebas);
+}
+
+h1 {
+  font-family: var(--font-press);
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,16 +24,7 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-}
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Russo One', sans-serif;
-}
 
 .glassEffect {
   background: rgba(0, 0, 0, 0.397);

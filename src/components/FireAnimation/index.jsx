@@ -6,7 +6,7 @@ import Image from 'next/image';
 const FireAnimation = () => {
   return (
     <div style={{ width: '100%', height: '100%', position: 'absolute', left: '-100px',  bottom: '0' }}>
-      {Array(120)
+      {Array(30)
         .fill()
         .map((_, index) => (
           <motion.div
