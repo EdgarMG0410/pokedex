@@ -30,8 +30,16 @@ const List = () => {
 
   return (
     <main className={st.bodylist}>
-      <div className={st.headerlist}>
+      <div className={st.navbar}>
+       <div>
+        <img src="" alt="filter" />
+       </div>
         <h1>151 DEX</h1>
+        <div>
+          <p>first generation</p>
+        </div>
+
+
       </div>
       <section className={st.pokelist}>
         {pokemonList.map((pokemon, index) => (

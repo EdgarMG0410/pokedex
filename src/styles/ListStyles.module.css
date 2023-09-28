@@ -7,11 +7,12 @@
     max-width: 1400px;
     margin: 0 auto;
 }
-.headerlist{
+.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
+    column-gap:  40px;
     color:black; 
     background-color: red;
     width: 100vw;

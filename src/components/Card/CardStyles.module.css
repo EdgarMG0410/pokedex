@@ -10,6 +10,10 @@
     -moz-box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.28);
 }
 
+.card:hover {
+    cursor: pointer;
+}
+
 .pokeimg {
     display: flex;
     align-items: center;
@@ -28,12 +32,13 @@
 .namepokemon {
     display: flex;
     justify-content: center;
-    font-size: 25px;
-    width: 100px;
-    height: 30px;
-    margin-bottom: 10px;
-    color: black;
-
+    font-size: clamp(16px, 3vw, 20px);
+    width: fit-content;
+    height: fit-content;
+    margin-top: 10px;
+    color: rgb(58, 56, 56);
+    font-family: var(--font-press);
+    text-transform: uppercase;
 }
 
 .typebox {
