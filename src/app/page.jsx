@@ -35,7 +35,7 @@ export default function Home() {
                 <div className="relative pb-24">
                   <PokeLoader />
                 </div>
-                <p className="text-4xl capitalize">Cargando ...</p>
+                <p className="text-4xl text-white capitalize">Cargando ...</p>
               </div>
             ) : (
               <div className="relative w-full h-full bg-black">
