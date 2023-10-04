@@ -59,16 +59,18 @@ export const fadeBottom = (duration = 0.3, delay = 0, opacity = 1) => ({
     }
 })
 
-export const inSheet = (duration = 0.2) => ({
+export const scaleDown = (duration = 1.5) => ({
     visible: {
-        y: 0,
+        scale: 1, 
+        rotate: 0,
         transition: {
             duration
             // ease: 'easeInOut'
-        }
+        },
     },
     hidden: {
-        y: '80%',
+        scale: 6,
+        rotate: 3600,
         transition: {
             duration
             // ease: 'easeInOut'

@@ -2,20 +2,19 @@ import React from "react";
 import st from "./CardStyles.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Badges from "../Badge";
+import Badges from "../Badge"
 import { fadeBottom, fadeIn } from "../../utils/animations";
 import Link from "next/link";
 
 const Card = ({ pokemon }) => {
-  console.log(pokemon);
+  console.log(pokemon)
   return (
-    <Link href='/pokemon'>
+    <Link href={`/pokemon/${pokemon.name}`}>
       <motion.div
-        initial={"hidden"}
-        whileInView={"visible"}
+        initial={'hidden'}
+        whileInView={'visible'}
         variants={fadeBottom(0.7, 0.2)}
-        className={st.card}
-      >
+        className={st.card}>
         <div className={st.namepokemon}>
           <p>{pokemon.name}</p>
         </div>
@@ -25,11 +24,7 @@ const Card = ({ pokemon }) => {
 
         <div className={st.pokemontypes}>
           {pokemon.types.map((type, index) => (
-            <Badges
-              key={index}
-              className={type.type.name}
-              text={type.type.name}
-            />
+            <Badges key={index} className={type.type.name} text={type.type.name} />
           ))}
         </div>
       </motion.div>
